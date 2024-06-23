@@ -1,9 +1,168 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <style>
+  .todo-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 
-<h1>Welcome to my page</h1>
-<p>currently in development</p>
+  .main-page {
+   width: 50%;
+   margin: 0 auto;
+  }
 
-</body>
+  .main-page h1 {
+   font-size: 36px;
+   font-weight: bold;
+  }
+
+  .main-page p {
+   font-size: 24px;
+  }
+
+  .social-links {
+   width: 50%;
+   margin: 0 auto;
+  }
+
+  .social-links h1 {
+   font-size: 36px;
+   font-weight: bold;
+  }
+
+</style>
+    <title>Bridgetowne - Gaming Token for All</title>
+  </head>
+  <body>
+
+    <ion-tabs>
+      <ion-tab tab="home">
+        <ion-nav id="home-nav"></ion-nav>
+        <div id="home-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title class="title">Home</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content color="light" class="ion-padding">
+            <section class="main-page">
+              <h1>Unlock the Gateway to Adventure</h1>
+              <p>To enhance your gaming experience, we’ve introduced our exclusive game token: Bridgetowne.</p>
+              <p>Bridgetowne coin is more than just a meme token; it’s your key to unlocking a world of possibilities within our games.
+                Holders of Bridgetowne coin gain access to special in-game features, rewards, and the ability to play the game itself.</p>
+              <p>Ready to join the action? Simply add Bridgetowne to your Phantom wallet and purchase.
+                Dive into the game with ease and start your journey today!</p>
+                <ion-button color="primary" onclick="openSolScan()">Get Token Address</ion-button>
+            </section>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="games">
+        <ion-nav id="games-nav"></ion-nav>
+        <div id="games-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title class="title">Games</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="todo-page">Games - Coming Soon!</div>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="gallery">
+        <ion-nav id="gallery-nav"></ion-nav>
+        <div id="gallery-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title class="title">Apps</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="todo-page">Apps - Coming Soon!</div>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab tab="social">
+        <ion-nav id="social-nav"></ion-nav>
+        <div id="social-page">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title class="title">Social</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <div class="social-links">
+              <h1>Where to find us?</h1>
+              <ion-button color="success" onclick="openGithub()">Git Hub</ion-button>
+              <ion-button color="success" onclick="openTwitter()">Follow Us On X</ion-button>
+              <ion-button color="success" onclick="openTelegramChannel()">Join our Telegram Channel</ion-button>
+            </div>
+          </ion-content>
+        </div>
+      </ion-tab>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-sharp"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="games">
+          <ion-icon name="game-controller-sharp"></ion-icon>
+          Games
+        </ion-tab-button>
+        <ion-tab-button tab="gallery">
+          <ion-icon name="apps-sharp"></ion-icon>
+          Apps
+        </ion-tab-button>
+        <ion-tab-button tab="social">
+          <ion-icon name="people-outline"></ion-icon>
+          Social
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+
+    <script>
+      const homeNav = document.querySelector('#home-nav');
+      const homePage = document.querySelector('#home-page');
+      homeNav.root = homePage;
+
+      const gamesNav = document.querySelector('#games-nav');
+      const gamesPage = document.querySelector('#games-page');
+      gamesNav.root = gamesPage;
+
+      const galleryNav = document.querySelector('#gallery-nav');
+      const galleryPage = document.querySelector('#gallery-page');
+      galleryNav.root = galleryPage;
+
+      const socialNav = document.querySelector('#social-nav');
+      const socialPage = document.querySelector('#social-page');
+      socialNav.root = socialPage;
+
+      function openSolScan() {
+         window.open('https://solscan.io/token/8FdyCECguNHdG5RZ5a6CjDr7eUPeFy8p1eaU3HgdX1wJ', '_blank');
+      }
+
+      function openGithub() {
+         window.open('https://github.com/bridgetowne', '_blank');
+      }
+
+      function openTwitter() {
+         window.open('https://x.com/thebridgetowne', '_blank');
+      }
+
+      function openTelegramChannel() {
+         window.open('https://t.me/thebridgetowne', '_blank');
+      }
+    </script>
+
+
+  </body>
 </html>
