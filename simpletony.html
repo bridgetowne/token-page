@@ -55,6 +55,7 @@
 
         preload ()
         {
+            this.load.setBaseURL('https://cdn.jsdelivr.net/gh/bridgetowne/token-page');
             this.load.image('sky', 'assets/skies/gamebg.png');
             this.load.image('red', 'assets/particles/red.png');
             this.load.image('player', 'assets/sprites/hero.png');
@@ -257,7 +258,8 @@
 
         preload ()
         {
-            this.load.image('introScne', 'assets/pics/intro.png');
+          this.load.setBaseURL('https://cdn.jsdelivr.net/gh/bridgetowne/token-page');  
+          this.load.image('introScne', 'assets/pics/intro.png');
         }
 
         create ()
