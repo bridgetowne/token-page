@@ -28,6 +28,27 @@
    font-size: 24px;
   }
 
+<<<<<<< HEAD
+=======
+  @media (max-width: 767px) {
+    #main-page {
+      padding: 10px;
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+
+    #main-page h1 {
+      font-size: 1.5rem; /* Adjust header size for mobile */
+    }
+
+    #main-page p {
+      font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    }
+
+    #main-page ion-button {
+      width: 100%; /* Full width button on mobile */
+    }
+  }
+>>>>>>> 4337f20 (Simple Tony Public Release v1.0)
   .social-links {
    width: 50%;
    margin: 0 auto;
@@ -38,6 +59,87 @@
    font-weight: bold;
   }
 
+<<<<<<< HEAD
+=======
+  .mobile-only {
+   display: none;
+ }
+
+ @media (max-width: 480px) {
+   .mobile-only {
+     display: block;
+   }
+ }
+
+ .desktop-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+
+ion-card {
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+ion-card-header {
+  text-align: center;
+}
+
+ion-card-content {
+  text-align: justify;
+}
+
+.play-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.play-card:hover {
+  transform: translateY(-5px);
+}
+
+.play-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.play-card ion-card-header {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.play-card ion-card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.play-card ion-card-subtitle {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.play-card ion-card-content {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.play-card ion-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: #f9f9f9;
+}
+
+>>>>>>> 4337f20 (Simple Tony Public Release v1.0)
 </style>
     <title>Bridgetowne - Gaming Token for All</title>
   </head>
@@ -74,7 +176,201 @@
             </ion-toolbar>
           </ion-header>
           <ion-content>
+<<<<<<< HEAD
             <div class="todo-page">Games - Coming Soon!</div>
+=======
+
+          <!--  <div class="todo-page">Games - Coming Soon!</div>   -->
+          <div class="desktop-only">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/simpletonytbn.png" />
+                      <ion-card-header>
+                        <ion-card-title>Simple Tony Hodls Bitcoin</ion-card-title>
+                        <ion-card-subtitle>Casual Web</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start" href="/simpletony.html">Play</ion-button>
+                        <ion-button id="game1" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="game1" side="top" alignment="center">
+                          <ion-content class="ion-padding">Help Tony hodl bitcoin and avoid ruggies.</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web Game 2</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="game2" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="game2" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web Game 2</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web Game 3</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="game3" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="game3" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web Game 3</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web Game 4</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="game4" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="game4" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web Game 4</ion-content>
+                        </ion-popover>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web Game 5</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="game5" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="game5" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web Game 5</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+                <!-- Repeat ion-col for more cards -->
+              </ion-row>
+            </ion-grid>
+          </div>
+
+          <div class="mobile-only">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile Game</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mgame1" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mgame1" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 1</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile Game 2</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mgame2" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mgame2" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 2</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile Game 3</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mgame3" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mgame3" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 3</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile Game 4</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mgame4" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mgame4" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 4</ion-content>
+                        </ion-popover>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile Game 5</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mgame5" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mgame5" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 5</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+                <!-- Repeat ion-col for more cards -->
+              </ion-row>
+            </ion-grid>
+         </div>
+
+
+>>>>>>> 4337f20 (Simple Tony Public Release v1.0)
           </ion-content>
         </div>
       </ion-tab>
@@ -87,7 +383,200 @@
             </ion-toolbar>
           </ion-header>
           <ion-content>
+<<<<<<< HEAD
             <div class="todo-page">Apps - Coming Soon!</div>
+=======
+          <!--   <div class="todo-page">Apps - Coming Soon!</div> -->
+          <div class="desktop-only">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web App</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="app1" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="app1" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web App 1</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web App 2</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="app2" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="app2" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web App 2</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web App 3</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="app3" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="app3" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web App 3</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web App 4</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="app4" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="app4" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web App 4</ion-content>
+                        </ion-popover>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Desktop Web App 5</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="app5" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="app5" side="top" alignment="center">
+                          <ion-content class="ion-padding">Desktop Web App 5</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+                <!-- Repeat ion-col for more cards -->
+              </ion-row>
+            </ion-grid>
+          </div>
+
+          <div class="mobile-only">
+            <ion-grid>
+              <ion-row>
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile App</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mapp1" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mapp1" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile App 1</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile App 2</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mapp2" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mapp2" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile App 2</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile App 3</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mapp3" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mapp3" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile App 3</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile App 4</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mapp4" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mapp4" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile App 4</ion-content>
+                        </ion-popover>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-md="4" size-lg="3">
+                  <ion-card class="play-card">
+                    <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
+                      <ion-card-header>
+                        <ion-card-title>Mobile App 5</ion-card-title>
+                        <ion-card-subtitle>Genre</ion-card-subtitle>
+                      </ion-card-header>
+                      <ion-footer>
+                        <ion-button fill="outline" slot="start">Install</ion-button>
+                        <ion-button id="mapp5" fill="clear" slot="end">Details</ion-button>
+                        <ion-popover trigger="mapp5" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile App 5</ion-content>
+                        </ion-popover>
+                      </ion-footer>
+                    </ion-card>
+                </ion-col>
+                <!-- Repeat ion-col for more cards -->
+              </ion-row>
+            </ion-grid>
+         </div>
+
+
+>>>>>>> 4337f20 (Simple Tony Public Release v1.0)
           </ion-content>
         </div>
       </ion-tab>
