@@ -244,7 +244,7 @@ ion-card-content {
                       </ion-footer>
                     </ion-card>
                 </ion-col>
-
+            <!--
                 <ion-col size="6" size-md="4" size-lg="3">
                   <ion-card class="play-card">
                     <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
@@ -261,6 +261,7 @@ ion-card-content {
                       </ion-footer>
                     </ion-card>
                 </ion-col>
+              -->
                 <!-- Repeat ion-col for more cards -->
               </ion-row>
             </ion-grid>
@@ -273,15 +274,14 @@ ion-card-content {
                   <ion-card class="play-card">
                     <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
                       <ion-card-header>
-                        <ion-card-title>Mobile Game</ion-card-title>
+                        <ion-card-title id="mgame1">Mobile Game</ion-card-title>
+                        <ion-popover trigger="mgame1" side="top" alignment="center">
+                          <ion-content class="ion-padding">Mobile Game 1</ion-content>
+                        </ion-popover>
                         <ion-card-subtitle>Genre</ion-card-subtitle>
                       </ion-card-header>
                       <ion-footer>
                         <ion-button fill="outline" slot="start">Install</ion-button>
-                        <ion-button id="mgame1" fill="clear" slot="end">Details</ion-button>
-                        <ion-popover trigger="mgame1" side="top" alignment="center">
-                          <ion-content class="ion-padding">Mobile Game 1</ion-content>
-                        </ion-popover>
                       </ion-footer>
                     </ion-card>
                 </ion-col>
@@ -446,7 +446,7 @@ ion-card-content {
                       </ion-footer>
                     </ion-card>
                 </ion-col>
-
+                  <!--
                 <ion-col size="6" size-md="4" size-lg="3">
                   <ion-card class="play-card">
                     <img alt="Silhouette of mountains" src="assets/pics/cardmedia.png" />
@@ -463,6 +463,7 @@ ion-card-content {
                       </ion-footer>
                     </ion-card>
                 </ion-col>
+                -->
                 <!-- Repeat ion-col for more cards -->
               </ion-row>
             </ion-grid>
